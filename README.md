@@ -101,6 +101,8 @@ powerful cross-platform games. [[source]](https://github.com/MonoGame/MonoGame)
 
 ## JavaScript
 
+- **[Kaplay](https://kaplayjs.com)** - A JavaScript/TypeScript Game Library that feels like a game. [[source]](https://github.com/kaplayjs/kaplay)
+
 - **[Phaser](https://phaser.io)** - A fast, free and fun open source framework for **Canvas** ans **WebGL** powered browser games. [[source]](https://github.com/photonstorm/phaser)
 
 - **[Three.js](https://threejs.org/)** - An easy-to-use, lightweight, cross-browser, general-purpose 3D library. [[source]](https://github.com/mrdoob/three.js)
