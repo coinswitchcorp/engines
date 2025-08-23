@@ -59,6 +59,8 @@ powerful cross-platform games. [[source]](https://github.com/MonoGame/MonoGame)
 
 - **[Irrlicht](https://irrlicht.sourceforge.io)** - An open source realtime 3D engine. [[source]](https://github.com/zaki/irrlicht)
 
+* **[Librebox](https://github.com/librebox-devs/librebox-demo)** - An open source, Roblox-compatible game engine. [[source]](https://github.com/librebox-devs/librebox-demo)
+
 - **[Luanti](https://www.luanti.org/)** - An open source voxel game engine. [[source]](https://github.com/luanti-org/luanti)
 
 - **Nebula** - An open-source and free-to-use modern C++ game engine. [[source]](https://github.com/gscept/nebula)
