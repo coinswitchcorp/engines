@@ -35,6 +35,8 @@ powerful cross-platform games. [[source]](https://github.com/MonoGame/MonoGame)
 
 - **[NeoAxis](https://www.neoaxis.com)** - A versatile game engine for creating video games and real-time apps. [[source]](https://github.com/NeoAxis/NeoAxisEngine)
 
+- **[s&box](https://sbox.game)** - A spiritual successor to Garry’s Mod and a love letter to Source 2. [[source]](https://github.com/Facepunch/sbox-public)
+
 - **[Stride](https://www.stride3d.net)** - Free, open-source, cross-platform. [[source]](https://github.com/stride3d/stride)
 
 ## C++ <span id="cpp">
