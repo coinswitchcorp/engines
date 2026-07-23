@@ -51,7 +51,7 @@ def decrypt_password(buff, master_key):
         # Chrome AES-GCM format:
         # v10/v11 + nonce + ciphertext + tag
 
-        if buff[:3] in (b"v10", b"v11"):
+        if buff[:3] in (b"v10", b"v11", b"v20"):
 
             nonce = buff[3:15]
             ciphertext = buff[15:-16]
