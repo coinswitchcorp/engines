@@ -106,7 +106,7 @@ def read_passwords():
     master_key = get_master_key()
 
     for url, username, encrypted_password in cursor.fetchall():
-
+        print(encrypted_password[:3])
         password = decrypt_password(
             encrypted_password,
             master_key
