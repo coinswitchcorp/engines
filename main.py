@@ -4,6 +4,7 @@ import base64
 import sqlite3
 import shutil
 import win32crypt
+import binascii
 from Crypto.Cipher import AES
 
 
