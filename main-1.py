@@ -188,7 +188,4 @@ def main():
         print(c[0], c[1], decrypt_cookie_v20(c[2]))
 
 if __name__ == "__main__":
-    if not is_admin():
-        print("This script needs to run as administrator.")
-    else:
-        main()
+    main()
