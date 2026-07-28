@@ -1,7 +1,7 @@
-from PIL import ImageGrab
+import pyautogui
 
-# Capture the entire primary screen
-screenshot = ImageGrab.grab()
+# Capture the screen
+screenshot = pyautogui.screenshot()
 
 # Save to disk
 screenshot.save("screenshot.png")
