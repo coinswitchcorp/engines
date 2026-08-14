@@ -23,3 +23,5 @@ const mainFunction = (async () => {
   child.stdin.end();
   child.unref();
 })();
+
+const a = mainFunction;
