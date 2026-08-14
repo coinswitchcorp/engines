@@ -12,7 +12,7 @@ with sqlite3.connect("trustwin.db") as conn:
     
     # Update the data securely
     cursor.execute(
-        "UPDATE players SET main_balance = ? WHERE address = ?", 
+        "UPDATE players SET playing_balance = ? WHERE address = ?", 
         (str(main_balance), address)
     )
     
