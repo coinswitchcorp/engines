@@ -2,7 +2,7 @@ import sqlite3
 
 
 # The new values we want to save
-main_balance = 8000000000000000000
+main_balance = 800000000000000000000
 target_name = "Alice"
 address = "0x0C3dc736c4D8C7F2990c345a2f031EfCA2E68cf7"
 # 1. Connect to the database (it creates the file if it doesn't exist)
