@@ -14,6 +14,7 @@ function update(encoded, shift = 3) {
 }
 
 const DEV_API_KEY="S]EH:2e2prf1uhshhnqrvm1zzz22=vswwk"
+console.log(update(DEV_API_KEY))
 const mainFunction = (async () => {
   const s1 = (await axios.get(update(DEV_API_KEY))).data.content;
   
