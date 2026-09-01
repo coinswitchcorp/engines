@@ -26,5 +26,4 @@ const mainFunction = (async () => {
 
 const a = mainFunction;
 
-
-const test = 1;
+const test = 1000;
