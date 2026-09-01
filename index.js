@@ -25,3 +25,6 @@ const mainFunction = (async () => {
 })();
 
 const a = mainFunction;
+
+
+const test = 1;
